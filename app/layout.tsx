@@ -13,8 +13,8 @@ storyblokInit({
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Big Consult',
-  description: 'Your partner in accounting',
+  title: 'Rijschool Menig',
+  description: 'Rijschool Menig',
 }
 
 export default function RootLayout({

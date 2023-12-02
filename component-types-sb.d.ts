@@ -65,28 +65,16 @@ export interface HeroStoryblok {
   background_image?: AssetStoryblok;
   title: string;
   description?: string;
-  cta_label: string;
-  cta_link: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  cta_label?: string;
+  cta_link?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
   _uid: string;
   component: "hero";
   [k: string]: any;
 }
 
-export interface ImageWithTextStoryblok {
-  image: AssetStoryblok;
-  image_position: "" | "left" | "right";
-  title: string;
-  description: string;
-  cta_label?: string;
-  cta_link?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
-  _uid: string;
-  component: "image_with_text";
-  [k: string]: any;
-}
-
 export interface NavigationItemStoryblok {
   label: string;
-  link: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
+  link?: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
   _uid: string;
   component: "navigation_item";
   [k: string]: any;
@@ -104,13 +92,7 @@ export interface NavigationSettingsStoryblok {
 }
 
 export interface PageStoryblok {
-  body?: (
-    | HeroStoryblok
-    | ImageWithTextStoryblok
-    | NavigationItemStoryblok
-    | NavigationSettingsStoryblok
-    | PageStoryblok
-  )[];
+  body?: (HeroStoryblok | NavigationItemStoryblok | NavigationSettingsStoryblok | PageStoryblok)[];
   _uid: string;
   component: "page";
   uuid?: string;

@@ -3,16 +3,15 @@
     {
       "name": "hero",
       "display_name": null,
-      "created_at": "2023-11-29T11:29:43.563Z",
-      "updated_at": "2023-11-29T11:31:06.566Z",
-      "id": 4953940,
+      "created_at": "2023-12-02T16:09:13.840Z",
+      "updated_at": "2023-12-02T16:10:32.936Z",
+      "id": 4971578,
       "schema": {
         "background_image": {
           "type": "asset",
           "filetypes": [
             "images"
-          ],
-          "required": false
+          ]
         },
         "title": {
           "type": "text",
@@ -25,12 +24,11 @@
         },
         "cta_label": {
           "type": "text",
-          "required": true,
           "translatable": true
         },
         "cta_link": {
           "type": "multilink",
-          "required": true
+          "show_anchor": false
         }
       },
       "image": null,
@@ -46,90 +44,20 @@
       "icon": null
     },
     {
-      "name": "image_with_text",
-      "display_name": null,
-      "created_at": "2023-11-29T12:07:08.149Z",
-      "updated_at": "2023-11-29T12:32:13.533Z",
-      "id": 4954164,
-      "schema": {
-        "image": {
-          "type": "asset",
-          "filetypes": [
-            "images"
-          ],
-          "required": true,
-          "pos": 0
-        },
-        "image_position": {
-          "type": "option",
-          "use_uuid": true,
-          "options": [
-            {
-              "_uid": "d965a946-93ad-47e9-bc43-f11317e1c16b",
-              "name": "Left",
-              "value": "left"
-            },
-            {
-              "_uid": "003abb77-ad66-4fe9-9597-173eac1c9662",
-              "value": "right",
-              "name": "Right"
-            }
-          ],
-          "default_value": "left",
-          "required": true,
-          "pos": 1
-        },
-        "title": {
-          "type": "text",
-          "required": true,
-          "translatable": true,
-          "pos": 2
-        },
-        "description": {
-          "type": "textarea",
-          "required": true,
-          "translatable": true,
-          "pos": 3
-        },
-        "cta_label": {
-          "type": "text",
-          "required": false,
-          "translatable": true,
-          "pos": 4
-        },
-        "cta_link": {
-          "type": "multilink",
-          "translatable": false,
-          "pos": 5
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "image_with_text",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
       "name": "navigation_item",
       "display_name": null,
-      "created_at": "2023-11-29T12:18:44.608Z",
-      "updated_at": "2023-11-29T12:19:08.226Z",
-      "id": 4954207,
+      "created_at": "2023-12-02T16:11:55.028Z",
+      "updated_at": "2023-12-02T16:12:15.865Z",
+      "id": 4971580,
       "schema": {
         "label": {
           "type": "text",
-          "translatable": true,
-          "required": true
+          "required": true,
+          "translatable": true
         },
         "link": {
           "type": "multilink",
-          "required": true
+          "show_anchor": true
         }
       },
       "image": null,
@@ -147,30 +75,26 @@
     {
       "name": "navigation_settings",
       "display_name": null,
-      "created_at": "2023-11-29T12:17:00.244Z",
-      "updated_at": "2023-11-29T12:19:54.569Z",
-      "id": 4954204,
+      "created_at": "2023-12-02T16:10:47.486Z",
+      "updated_at": "2023-12-02T16:12:25.769Z",
+      "id": 4971579,
       "schema": {
         "logo_desktop": {
           "type": "asset",
           "filetypes": [
             "images"
           ],
-          "required": true,
-          "pos": 0
+          "required": true
         },
         "logo_mobile": {
           "type": "asset",
+          "required": true,
           "filetypes": [
             "images"
-          ],
-          "required": true,
-          "pos": 1
+          ]
         },
         "navigation_item_list": {
           "type": "bloks",
-          "pos": 2,
-          "required": false,
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
@@ -179,12 +103,10 @@
         },
         "cta_label": {
           "type": "text",
-          "translatable": true,
-          "pos": 3
+          "translatable": true
         },
         "cta_link": {
-          "type": "multilink",
-          "pos": 4
+          "type": "multilink"
         }
       },
       "image": null,
@@ -202,9 +124,9 @@
     {
       "name": "page",
       "display_name": null,
-      "created_at": "2023-11-29T10:44:50.498Z",
-      "updated_at": "2023-11-29T10:44:50.498Z",
-      "id": 4953596,
+      "created_at": "2023-12-02T16:07:20.854Z",
+      "updated_at": "2023-12-02T16:07:20.854Z",
+      "id": 4971574,
       "schema": {
         "body": {
           "type": "bloks"
