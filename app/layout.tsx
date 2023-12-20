@@ -3,10 +3,10 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { storyblokInit, apiPlugin } from '@storyblok/react/rsc'
 import StoryblokProvider from '@/components/StoryblokProvider'
-import { Navbar } from '@/components/Navbar'
+import Header  from '@/components/header/header'
 
 storyblokInit({
-  accessToken: process.env.STORYBLOK_TOKEN,
+  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_TOKEN,
   use: [apiPlugin],
 })
 
@@ -25,8 +25,9 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="fr">
-        <body className={inter.className}>
-          <Navbar />
+        
+        <body>
+  
           {children}
         </body>
       </html>
