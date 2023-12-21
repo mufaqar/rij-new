@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css"; */
+
+
+@font-face {
+    font-family: 'axiformaBold';
+    src: url('../public/fonts/axiformaBold.ttf');
+  }
+  @font-face {
+    font-family: 'axiformaRegular';
+    src: url('../public/fonts/axiformaRegular.ttf');
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Montserrat:wght@400;700&family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+.title_underline::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 3px;
+    width: 112px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #BE9202 0, #BE9202 80px, transparent 80px, transparent 85px, #BE9202 85px, #BE9202 100px, transparent 100px, transparent 105px, #BE9202 105px, #BE9202 112px);
+}
+.title_underline{
+    position: relative;
+    padding-bottom: 17px;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  ._content p{
+    margin-bottom: 12px;
+  }
+  ._cardcontent a{
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 767px){
+    .aboutBg{
+      background-size: 0 !important;
+    }
+  }
+  

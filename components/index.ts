@@ -1,2 +1,2 @@
 export { Page } from './Page'
-export { Hero } from './Hero'
+export { Hero } from './Slide'

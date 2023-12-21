@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="fr">
-        
         <body>
-  
           {children}
         </body>
       </html>
