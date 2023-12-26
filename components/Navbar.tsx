@@ -10,7 +10,6 @@ export const Navbar: FC = async () => {
   return (
     <nav>
       <div className="flex space-x-4">
-        {/* TODO: create link component */}
         {content.navigation_item_list?.map((item) => (
           <div key={item._uid}>{item.label}</div>
         ))}

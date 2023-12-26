@@ -17,8 +17,10 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-slick": "^0.29.0",
     "storyblok-rich-text-react-renderer": "^2.9.1",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",

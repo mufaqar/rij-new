@@ -5,14 +5,16 @@ import { storyblokInit, apiPlugin } from '@storyblok/react/rsc'
 /** 2. Import your components */
 import { Page } from "@/components/Page";
 import Grid from "./Grid";
-import Hero from './Slide';
 import Slider from './Slider'
-import Slide from './Slide';
 import ServicesCard from './Services_Card/services_card';
 import MultipleSection from './Mutilple_Section/MultipleSection';
 import About_Company from './about';
 import CallToAction from './callToAction';
 import TitleInfo from './TitleInfo/title_info';
+import Pricing from './pricing';
+import ContactForm from './contact-form';
+import Gallary from './gallary';
+import Testimonials from './testimonials'
 
 // import Services from "./services";
 // import Full_Content_Block from "./Full_Content_Block";
@@ -34,9 +36,11 @@ storyblokInit({
     'multiple section': MultipleSection,
     "about card": About_Company,
     "call to action": CallToAction,
-    // "text_block_half": Half_Content_Block,
-    // "Work": Brand_Slider,
-    // "Clients Section": Client_Logos
+    "pricing": Pricing,
+    "contact": ContactForm,
+    "gallary": Gallary,
+    "testimonials": Testimonials
+
   },
 });
 
